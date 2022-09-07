@@ -81,7 +81,7 @@ def save_and_maybe_display(optimizing_img, dump_path, config, img_id, num_of_ite
         dump_img = np.copy(out_img)
         dump_img += np.array(IMAGENET_MEAN_255).reshape((1, 1, 3))
         dump_img = np.clip(dump_img, 0, 255).astype('uint8')
-        cv.imwrite(os.path.join(dump_path, out_img_name), dump_img[:, :, ::-1])
+        cv.imwrite(os.path.join(dump_path, "result.png"), dump_img[:, :, ::-1])
 
     if should_display:
         plt.imshow(np.uint8(get_uint8_range(out_img)))
