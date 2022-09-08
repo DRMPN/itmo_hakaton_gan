@@ -38,7 +38,6 @@ def start_gan():
                                stderr=subprocess.PIPE)
     stdout, stderr = process.communicate()
     print(stdout, stderr)
-    time.sleep(3)
     # subprocess.run(f"python neural_style_transfer.py --content_img_name {content_name} --style_img_name {style_name}")
 
 
@@ -55,9 +54,7 @@ def predict():
         f.save("./data/content-images/user_input.jpg")
         save_path = 'static/result.png'
         time.sleep(1)
-        print("BEFORE")
         start_gan()
-        print("AFTER")
         add_text_line(save_path)
         return send_file(save_path, as_attachment=True)
 
