@@ -23,16 +23,20 @@
   <body class="text-center">
     <form class="form-signin" method=post enctype=multipart/form-data>
 
-        {% if predicted %}
-            <img  class="mb-4" src="/static/old.png" alt="" width="300">
-        {% else %}
-            <img class="mb-4" src="/static/old.png" alt="" width="300">
-        {% endif %}
-        <h1 class="h3 mb-3 font-weight-normal">Раскрась свой дом как на картинке</h1>
-        <input type="file" name="file" class="form-control-file" id="inputfile">
-        <br/>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Загрузить фото</button>
-        <p class="mt-5 mb-3 text-muted">Приложение использует ИИ, чтобы превратить Вашу улицу в красивый пейзаж, как в центре города</p>
+      <!-- START IMAGE COMPARISON SLIDER -->
+      <div class="image-spliter mb-4" width="300">
+        <div class="mover"></div>
+        <img class="img-left" src="/static/image-comparison/input.jpg">
+        <img class="img-right" src="/static/image-comparison/output.jpg">
+      </div>
+      <script src="/static/image-comparison/image-comparison-slider.js"></script>
+      <!-- END IMAGE COMPARISON SLIDER -->
+      
+      <h1 class="h3 mb-3 font-weight-normal">Раскрась свой дом как на картинке</h1>
+      <input type="file" name="file" class="form-control-file" id="inputfile">
+      <br/>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Загрузить фото</button>
+      <p class="mt-5 mb-3 text-muted">Приложение использует ИИ, чтобы превратить Вашу улицу в красивый пейзаж, как в центре города</p>
     </form>
     <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
