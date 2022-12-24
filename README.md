@@ -1,12 +1,17 @@
-### Генерация красивых открыток из изображения пользователя
+# Generating beautiful postcards from a user image
 
-Санкт-Петербург большой город и не ограничивается Невским проспектом и эрмитажем.
-Сегодня мы даём возможность каждому жителю города сделать открытку со своим домом или улицей
+[<img src="preview.png" width="1000"/>](preview.png)  
 
-Вы можете воспользоваться нашим сервисом, чтобы загрузить своё фото, а затем нейронная сеть сделает свою магию.
+St. Petersburg is a big city and is not limited to Nevsky Prospekt and the Hermitage.
+Today we give every resident of the city the opportunity to make a postcard with their house or street.
 
-<img src="interface.jpg" width="270px">
+You can use our service to upload your photo and then the neural network will do its magic.  
+As a result, you will receive a beautiful image that can be printed, hung on the wall, sent as a postcard or posted on your page on the social network.  
 
-На выходе Вы получите красивое изображение, которое можно распечатать, повесить на стенку, отправить как открытку или разместить на своей страничке в соцсети
+Work demonstration  
+---
+![animation](animation.gif)  
 
-<img src="preview.png" width="270px">
+Main page  
+---
+[<img src="interface.jpg" width="350"/>](interface.jpg)  
